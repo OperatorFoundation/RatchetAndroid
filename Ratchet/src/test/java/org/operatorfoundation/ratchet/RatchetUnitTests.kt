@@ -126,7 +126,8 @@ class RatchetUnitTests
             sharedKey = SharedKey(testBytes1),
             messageKey = MessageKey(testBytes1),
             localEphemeralKeypair = keypair,
-            remoteEphemeralPublicKey = publicKey
+            remoteEphemeralPublicKey = publicKey,
+            messageNumber = 0
         )
 
         assertNotNull(state.rootKey)
@@ -149,7 +150,8 @@ class RatchetUnitTests
             sharedKey = SharedKey(testBytes1),
             messageKey = MessageKey(testBytes1),
             localEphemeralKeypair = keypair,
-            remoteEphemeralPublicKey = publicKey
+            remoteEphemeralPublicKey = publicKey,
+            messageNumber = 0
         )
 
         val state2 = state1.copy()
@@ -173,7 +175,8 @@ class RatchetUnitTests
             sharedKey = SharedKey(testBytes1),
             messageKey = MessageKey(testBytes1),
             localEphemeralKeypair = keypair,
-            remoteEphemeralPublicKey = publicKey
+            remoteEphemeralPublicKey = publicKey,
+            messageNumber = 0
         )
 
         val (rootKey, chainKey, sharedKey, messageKey, localKeypair, remotePublicKey) = state

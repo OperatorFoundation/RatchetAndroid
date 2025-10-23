@@ -19,5 +19,6 @@ data class RatchetState(
     val sharedKey: SharedKey,
     val messageKey: MessageKey,
     val localEphemeralKeypair: Curve25519KeyPair,
-    val remoteEphemeralPublicKey: Curve25519PublicKey
+    val remoteEphemeralPublicKey: Curve25519PublicKey,
+    val messageNumber: Int
 )
