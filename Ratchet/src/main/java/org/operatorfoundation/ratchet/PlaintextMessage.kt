@@ -3,7 +3,7 @@ package org.operatorfoundation.ratchet
 data class PlaintextMessage(val type: PlaintextMessageType, val bytes: ByteArray)
 {
     override fun equals(other: Any?): Boolean {
-        if (this == other) return true
+        if (this === other) return true
         if (other !is PlaintextMessage) return false
         if (type != other.type) return false
 

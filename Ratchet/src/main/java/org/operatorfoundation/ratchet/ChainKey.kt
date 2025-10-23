@@ -8,7 +8,7 @@ data class ChainKey(val bytes: ByteArray)
 {
     override fun equals(other: Any?): Boolean
     {
-        if (this == other) return true
+        if (this === other) return true
         if (other !is ChainKey) return false
 
         return bytes.contentEquals(other.bytes)

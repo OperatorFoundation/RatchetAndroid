@@ -12,7 +12,7 @@ import org.operatorfoundation.madh.Curve25519PublicKey
  * asynchronous messaging by combining a Diffie-Hellman ratchet with a
  * symmetric key ratchet.
  */
-object Ratchet
+class Ratchet
 {
     /**
      * Creates a new ratchet state from long-term keys.

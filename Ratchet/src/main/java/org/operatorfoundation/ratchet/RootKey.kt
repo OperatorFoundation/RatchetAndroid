@@ -8,7 +8,7 @@ data class RootKey(val bytes: ByteArray)
 {
     override fun equals(other: Any?): Boolean
     {
-        if (this == other) return true
+        if (this === other) return true
         if (other !is RootKey) return false
 
         return bytes.contentEquals(other.bytes)
